@@ -46,7 +46,7 @@ namespace Pitney_Bowes___task.Controllers
         }
 
         [HttpPost("AddAddress")]
-        public ActionResult<Address> AddAddress(Address newAddress)
+        public ActionResult AddAddress(Address newAddress)
         {
             addressbookService.AddAddress(newAddress);
             LogFullRequest();
@@ -58,7 +58,6 @@ namespace Pitney_Bowes___task.Controllers
             string loggingInfo = "";
             var request = HttpContext.Request;
             logger.LogInformation("\n");
-            
 
             foreach (var (key, value) in request.Headers)
             {

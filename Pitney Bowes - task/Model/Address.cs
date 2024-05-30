@@ -4,10 +4,10 @@
     {
         private static int _nextId = 1;
         public int Id { get; private set; }
-        public required string CityName { get; set; }
-        public required string ZipCode { get; set; }  
-        public required string Street { get; set; }
-        public required string HouseNumber { get; set; }
+        public string CityName { get; set; }
+        public string ZipCode { get; set; }  
+        public string Street { get; set; }
+        public string HouseNumber { get; set; }
         public string? FlatNumber { get; set; }
 
         public Address(string cityName, string zipCode, string street, string houseNumber, string? flatNumber)
