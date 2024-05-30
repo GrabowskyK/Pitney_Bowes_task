@@ -24,7 +24,7 @@ namespace Pitney_Bowes___task.Controllers
             if(model == null)
             {
                 LogFullRequest();
-                logger.LogWarning("Book is empty!");
+                logger.LogError("Book is empty!");
                 return BadRequest("Book is empty!");
             }
             LogFullRequest();
@@ -38,7 +38,7 @@ namespace Pitney_Bowes___task.Controllers
             if(model == null)
             {
                 LogFullRequest();
-                logger.LogWarning("There is not any address in city or city name is wrong!");
+                logger.LogError("There is not any address in city or city name is wrong!");
                 return BadRequest("There is not any address in city or city name is wrong!");
             }
             LogFullRequest();
